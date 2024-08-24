@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "7ffd0f95-ad59-4f10-87db-724cb18b1522",
+		"name": "test project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5313944"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/auth/verify",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWYxZWY3Nzg3Nzc4YmNiYzk3MGEwMmJmMTkwZGU1YWE3ZTM5NTNkZDgwMmM4YmRlYTY1YzQwZmY5YjcyNDNhNWQxMTBlOWZiNThiMDNmNjgiLCJpYXQiOjE3MjQ0MjUxNzcuOTAzNjc2LCJuYmYiOjE3MjQ0MjUxNzcuOTAzNjc3LCJleHAiOjE3NTU5NjExNzcuODk2MTY1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.RaBV9E_SBdyNqR9z5W68SkY0-v2qucx_RLap2hUus7R3RMnmt_nncSNX1laXWD-BMyBRuEy5RRBiEeM8BoIWsyyvhAtNL5-g46vbONT86t7NYs6imnEiMG4vbTts1M2RNdEhW8MW1fDTdRg2JOxd_qVNnUdv-0jBc1rLbh0zqBRIoZrsqYr8zo3QIP9rI4zebyyb8eUUoUI8v8jXgSWmnkNnzxuxfBpDgF55ie7UOlEUBNcs2SHvH0wNpK1TWeIVFZAuBNrYfnSbxzSw1kbcGRcj4ZuNcpI1ODwKgORiRy5wx1lYFNIqYAtUImm61yYkB6auoFOUCNVIPgJbbpTtrNA6_aS1tsEXNG81b0uYQVN7qQ7hy3JS5C7GlKOpYDFRei--y0viVt4GwhqVQ5dygI9XbmSJVHLg2gcxePu9jnEm1rCO8DEEFXMo7lmuxhRYTcDz1LIvxtEHGmdeo3qLN3Qjz4xLBNF89uHSDXpGqheYKyLwHgzMDVvvFs68qbj4RQ24dm_lgEM-nRsnISJCVcP8QsmkGs3K2AUvyLthytFGAtkLOq-Lj6aEH_icu4kaPyKK1g7Iu_5IWYnMJJd5Zxf8dn-ohBEw_wTp9ct25G6SPyvv1gSBAKd5AYpFet2dTpSOTQWv_BUS6aCVenT6PPHmL5wO53oYVLlXgdWdIEI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/malchikalexandr/Documents/TV24 API Local.postman_collection.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/verify",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"verify"
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/auth/login?email=test@example.com&password=12345678&password_confirmation=12345678",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/login?email=test@example.com&password=12345678&password_confirmation=12345678",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "test@example.com"
+						},
+						{
+							"key": "password",
+							"value": "12345678"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "12345678"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
